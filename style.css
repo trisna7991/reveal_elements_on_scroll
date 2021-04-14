@@ -1,0 +1,48 @@
+* {
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.welcome {
+    min-height: 850px;
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome h1 {
+    text-transform: capitalize;
+    font-size: 45px;
+    color: white;
+}
+
+.reveal_container {
+    min-height: 660px;
+}
+
+.reveal_container .reveal_content {
+    width: 450px;
+    height: 340px;
+    border: 1px solid gainsboro;
+    margin: auto;
+    background-color: steelblue;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(0);
+    transition: 1.8s ease all;
+}
+
+.active {
+    opacity: 1;
+    transform: translateY(150px);
+}
